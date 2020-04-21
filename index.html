@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>oftabase</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 	 
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
+		<link rel="icon" type="image/png" href="img/favicon.png">
+
+	</head>
+	<body font="family:arial:">
+		<div class="container-fluid">
+			<div class="card">
+				<div class="card-header">
+				Diametro y distancia angular para 5 grados
+				</div>	
+				<div class="card-body" data-ng-app="" data-ng-init="d=1.7464377163461635;D=20;">
+				
+					<h2>Calcular distancia del objeto: </h2>
+					d: <input type="number" ng-model="d">
+					<p><b>Distancia ( D ) :</b> {{ d / (2 * 0.04366094290865409) }}</p>
+					
+					<hr>
+					
+					<h2>Calcular altura del objeto</h2>
+					D: <input type="number" ng-model="D" id="D">
+					<p><b>Altura del objeto ( d ): </b id="altura"> {{ 2 * D * 0.04366094290865409 }}</p>
+					
+					<hr>
+					
+					<h2 id="optotipo" style="font-size:{{ (2 * D * 0.04366094290865409) * 28 }}px">L E T R A S</h2>	 
+					
+				</div>	
+			</div>
+		</div>
+
+
+		
+			
+	</body>
+</html>	
